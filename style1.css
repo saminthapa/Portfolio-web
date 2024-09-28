@@ -466,9 +466,10 @@ nav .fa-solid{
     }
 
     .about-col-1{
-       margin-top: -50px;
+        display: none;
+       /* margin-top: -50px;
         width: 200px;
-        height: 400px;
+        height: 400px; */
     }
     .sub-title{
         font-size: 35px;
