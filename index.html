@@ -29,8 +29,7 @@
             <img class="img" src="./uploads/Samin.png"
             width="600px";
             height="700px";
-            background-size="cover";
-            background-position="center";>
+            object-fit: cover;>
             </nav>
             <div class="header-text">
                 <p><span class="dynamic"></span> Developer</p>
@@ -73,7 +72,7 @@
                             <li><span>Languages Known</span><br><br><img src="./uploads/js.png" height="40"> <img src="./uploads/html-5.png" height="40"> <img src="./uploads/css-3.png" height="40"> <img src="./uploads/python.png" height="40"> <img src="./uploads/letter-c.png" height="40"> <img src="./uploads/c-.png" height="40"> </li>
                             <li><span>Frameworks & Library</span><br><br><img src="./uploads/react.png" height="40"> <img src="./uploads/next.jpg" height="40"> <img src="./uploads/nodejs.png" height="40"> <img src="./uploads/express.png" height="40"> <img src="./uploads/drizzle_orm.jpg" height="40"> <img src="./uploads/prisma.png" height="40"> <img src="./uploads/tailwindcss.jpg" height="40"> <img src="./uploads/bootstrap.png" height="40"> <img src="./uploads/material_ui.jpg" height="40"> </li>
                             <li><span>DataBase</span><br><br><img src="./uploads/mongodb.jpg" height="40"> <img src="./uploads/mysql.jpg" height="40"> </li>
-                            <li><span>Tools</span><br><br> <img src="./uploads/git.jpg" height="40">  <img src="./uploads/github.jpg" height="40"> <img src="./uploads/cloudflare.jpg" height="40"> <img src="./uploads/netlify.jpg" height="40"> <img src="./uploads/vercel.jpg" height="40"></li>
+                            <li><span>Tools</span><br><br> <img src="./uploads/git.jpg" height="40">  <img src="./uploads/github.jpg" height="40"> <img src="./uploads/cloudflare.jpg" height="40"> <img src="./uploads/netlify.jpg" height="40"> <img src="./uploads/vercel.jpg" height="40"> <img src="./uploads/postman.png" height="40"></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -233,6 +232,7 @@
     </footer>
 </div>
 
+
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -245,7 +245,9 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+        
     }
+    
   </script> 
 
   <script>
