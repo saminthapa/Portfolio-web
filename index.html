@@ -14,7 +14,7 @@
     <div id="header">
         <div class="container">
         <nav>
-            <li><a href="/"><img src="./logo.png" class="logo"></a></li>
+            <li><a href="/"><img src="./uploads/logo1.png" class="logo"></a></li>
             
             <ul id="sidemenu">
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
@@ -26,24 +26,33 @@
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
 
-            <img class="img" src="./b.png"
+            <img class="img" src="./uploads/Samin.png"
             width="600px";
-            height="600px";
+            height="700px";
             background-size="cover";
             background-position="center";>
             </nav>
             <div class="header-text">
-                <p>Website Developer</p>
-                <h1>Namaste!!, I'm <br><span>Samin Thapa</span><br> from Nepal</h1>
+                <p><span class="dynamic"></span> Developer</p>
+                <h1>नमस्ते!!, म<br><span>Samin Thapa</span></h1>
             </div>
         </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".dynamic",{
+                strings : ["Website", "Full-Stack", "Next.js"],
+                typeSpeed : 150,
+                backSpeed : 150,
+                loop :true
+            })
+        </script>
     </div>
 
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./1.png" 
+                    <img src="./uploads/1.png" 
                     width="700px";
                     height="500px" ;
                     >
@@ -51,7 +60,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi! I am pursuing a Bachelor of Information technology from Tribhuvan University and my specialization is Web. Development.. As a technology enthusiast, I aim to leverage my technical skills to contribute to a team that not only excels in its field but also creates a positive impact on society.</p>
+                    <p>Hi! I am pursuing a Bachelor of Information Technology from Tribhuvan University with a specialization in Website Development. I am a Full-Stack Developer proficient in the Next.js passionate about building scalable and user-friendly applications.</p>
 
                     <div class="tab-title">
                         <p class="tab-links active-link" onclick="opentab('skill')">Skill</p>
@@ -61,17 +70,18 @@
                     </div>
                     <div class="tab-contents active-tab" id="skill">
                         <ul>
-                            <li><span>Front-End Development</span><br>JavaScript, HTML and CSS, React.js, Bootstrap, TailwindCSS</li>
-                            <li><span>Back-End Development</span><br>Node.js, Express.js</li>
-                            <li><span>Data Base</span><br>MongoDB</li>
-                            <li><span>Other Languages</span><br>Python, Scratch, C, C++</li>
+                            <li><span>Languages Known</span><br><br><img src="./uploads/js.png" height="40"> <img src="./uploads/html-5.png" height="40"> <img src="./uploads/css-3.png" height="40"> <img src="./uploads/python.png" height="40"> <img src="./uploads/letter-c.png" height="40"> <img src="./uploads/c-.png" height="40"> </li>
+                            <li><span>Frameworks & Library</span><br><br><img src="./uploads/react.png" height="40"> <img src="./uploads/next.jpg" height="40"> <img src="./uploads/nodejs.png" height="40"> <img src="./uploads/express.png" height="40"> <img src="./uploads/drizzle_orm.jpg" height="40"> <img src="./uploads/prisma.png" height="40"> <img src="./uploads/tailwindcss.jpg" height="40"> <img src="./uploads/bootstrap.png" height="40"> <img src="./uploads/material_ui.jpg" height="40"> </li>
+                            <li><span>DataBase</span><br><br><img src="./uploads/mongodb.jpg" height="40"> <img src="./uploads/mysql.jpg" height="40"> </li>
+                            <li><span>Tools</span><br><br> <img src="./uploads/git.jpg" height="40">  <img src="./uploads/github.jpg" height="40"> <img src="./uploads/cloudflare.jpg" height="40"> <img src="./uploads/netlify.jpg" height="40"> <img src="./uploads/vercel.jpg" height="40"></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
+                            <li><span>2023 - 2024</span><br>College Ambassador at Hackamedia</li>
                             <li><span>2023 - Current</span><br>Freelancer as Web. Developer</li>
                             <li><span>2019 - 2020</span><br>Advance Computer Course</li>
-                            <li><span>2018 - 2019</span><br>National Cadet Crops</li>
+                            
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -82,8 +92,9 @@
                     </div>
                     <div class="tab-contents" id="certificate">
                         <ul>
-                            <li><span>CS50: Introduction to Computer Science -> </span><a class="certificate" href="./CS50x.pdf"> View</a></li>
-                            <li><span>Web Development Bootcamp -> </span><a class="certificate" href="./hp_boot.pdf"> View</a></li>
+                            <li><span>CS50: Harvard University ~> </span><a class="certificate" href="./uploads/CS50x.pdf"> View</a></li>
+                            <li><span>Web Development Bootcamp ~> </span><a class="certificate" href="./uploads/hp_boot.pdf"> View</a></li>
+                            <li><span>Graphic Designing WorkShop ~> </span><a class="certificate" href="./uploads/designing.png"> View</a></li>
                         </ul>
                     </div>
                 </div>
@@ -120,7 +131,7 @@
         <div class="work-list">
 
             <div class="work">
-                <img src="./stk_blog.jpeg">
+                <img src="./uploads/stk_blog.jpeg">
                 <div class="layer">
                     <h2>STK BLOG</h2>
                     <h4>Developed a blog website using React.js for
@@ -131,7 +142,7 @@
             </div>
 
             <div class="work">
-                <img src="./TTT.png" >
+                <img src="./uploads/TTT.png" >
             <div class="layer">
                 <i class="bi bi-link"></i> 
                 <h2>Tic Tac Toe Game</h2> <br>
@@ -141,7 +152,7 @@
         </div>
         
         <div class="work">
-            <img src="./destiny.jpeg">
+            <img src="./uploads/destiny.jpeg">
             <div class="layer">
                 <h2>Destiny Films</h2>
                 <h4>Created a responsive website for a Photography
@@ -152,7 +163,7 @@
         </div>
 
             <div class="work">
-                <img src="./PW.png" >
+                <img src="./uploads/PW.png" >
             <div class="layer">
                 <i class="bi bi-link"></i> 
                 <h2>Portfolio Website</h2> <br>
@@ -161,7 +172,7 @@
             </div>
             </div>
             <div class="work">
-                <img src="./calculator.jpg">
+                <img src="./uploads/calculator.jpg">
                 <div class="layer">
                     <h2>Calculator</h2>
                     <h4>This is a Calculator project using HTML, CSS and JavaScript. <br> <br>You can look through below link.</h4>
@@ -169,7 +180,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="./BK.png" >
+                <img src="./uploads/BK.png" >
                 <div class="layer"> 
                     <h2>Bike Store</h2><br>
                     <h4>This is a Bike Store project on React.js using useState Hook, Self-made API, Map function, Filter array, Container component and many more. <br> <br>You can look through below link.</h4>
@@ -192,7 +203,7 @@
             <div class="contact-left">
                  <h1 class="sub-title">Contact Me</h1>
                 <p> <i class="bi bi-envelope"></i> thapakshterysamin@gmail.com </p>
-                <p> <i class="bi bi-whatsapp"></i></i> +977 9826270167 </p> <br>
+                <p> <i class="bi bi-whatsapp"></i></i> +977 9768887374 </p> <br>
                 <h1 class="sub-title">Get in touch</h1>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/samin.thapa.90"><i class="bi bi-facebook"></i></a>
@@ -202,14 +213,14 @@
                     <a href="https://www.youtube.com/channel/UC2cIebOuovVdBCD4rKOIiWQ"><i class="bi bi-youtube"></i></a>
                     <a href="https://github.com/saminthapa"><i class="bi bi-github"></i></a>
                 </div>
-                <a href="./Samin_Resume.pdf" download  class="btn btn2"><i class="bi bi-file-earmark-arrow-down-fill"></i> Download Resume</a>              
+                <a href="./uploads/Samin_Resume.pdf" download  class="btn btn2"><i class="bi bi-file-earmark-arrow-down-fill"></i> Download Resume</a>              
             </div>
             <div class="contact-right">
                 <form action="https://api.web3forms.com/submit" method="POST" class="form">
                     <input type="hidden" name="access_key" value="cd3ba4bd-6a65-4fd9-9085-a1d36f26482f">
                     <input type="text" name="Name" placeholder="Your Full Name *" required>
                     <input type="email" name="Email" placeholder="Your Email *" required>
-                    <input type="subject" name="Subject" placeholder="Subject of Your Message *" required>
+                    <input type="subject" name="Subject" placeholder="Subject of Your Message">
                     <textarea name="Message" placeholder="Your Message *" class="contact-inputs" required></textarea>
                     <button type="submit" class="btn">Submit</button>
                 </form>
