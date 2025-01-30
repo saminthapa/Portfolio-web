@@ -259,5 +259,24 @@
     }
   </script>
  
+<script>
+    document.addEventListener('mousemove', function(e) {
+    const neonCursor = document.createElement('div');
+    neonCursor.classList.add('neon-cursor');
+    document.body.appendChild(neonCursor);
+
+    let x = e.clientX + window.scrollX; 
+    let y = e.clientY + window.scrollY; 
+
+    neonCursor.style.left = `${x - neonCursor.offsetWidth / 2}px`; 
+    neonCursor.style.top = `${y - neonCursor.offsetHeight / 2}px`; 
+
+    setTimeout(() => {
+        neonCursor.remove();
+    }, 500); 
+});
+
+
+</script>
 </body>
 </html>

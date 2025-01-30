@@ -11,7 +11,32 @@ html{
 body{
     background-color: rgb(0, 0, 0);
     padding-top: 20px;
+    cursor: pointer;
 }
+.neon-cursor {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #00ff99; 
+    pointer-events: none;
+    animation: neon-effect 0.5s ease-out forwards;
+}
+
+@keyframes neon-effect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00ff99, 0 0 40px #00ff99;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+        box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99, 0 0 60px #00ff99, 0 0 80px #00ff99;
+    }
+}
+
+
 .container{
     padding: 10px 10%;
 }
