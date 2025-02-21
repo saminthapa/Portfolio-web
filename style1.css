@@ -422,6 +422,34 @@ nav .fa-solid{
     display: none;
 }
 
+#sidemenu {
+    position: fixed;
+    top: 0;
+    right: -200px; /* Hidden initially */
+    width: 200px;
+    height: 100vh;
+    background: #333; /* Change as needed */
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidemenu li {
+    list-style: none;
+    padding: 10px;
+}
+
+#sidemenu .fa-xmark {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.fas.fa-bars {
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+}
 
 
 
